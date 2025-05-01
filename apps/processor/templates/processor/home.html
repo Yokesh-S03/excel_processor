@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Processor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .folder-input {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        #folderPath {
+            margin-right: 10px;
+        }
+        #results {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Excel File Processor</h1>
+        
+        <form id="uploadForm">
+            {% csrf_token %}
+            <div class="folder-input">
+                {{ form.folder_path }}
+                <button type="button" class="btn btn-primary" onclick="openFolderDialog()">Browse Folder</button>
+            </div>
+            <button type="button" class="btn btn-success" onclick="processFiles()">Process Files</button>
+        </form>
+        
+        <div id="results" class="d-none">
+            <h3>Processing Results</h3>
+            <div class="mb-3">
+                <a id="combinedLink" href="#" class="btn btn-outline-primary">Download Combined File</a>
+            </div>
+            <div>
+                <a id="titlesLink" href="#" class="btn btn-outline-secondary">Download Titles File</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openFolderDialog() {
+            window.electron?.showOpenDialog({ 
+                properties: ['openDirectory'] 
+            }).then(result => {
+                if (!result.canceled && result.filePaths.length > 0) {
+                    document.getElementById('folderPath').value = result.filePaths[0];
+                }
+            }).catch(err => {
+                console.error(err);
+                // Fallback for browser testing
+                document.getElementById('folderPath').value = "C:/test_folder";
+            });
+        }
+        
+        function processFiles() {
+            const folderPath = document.getElementById('folderPath').value;
+            if (!folderPath) {
+                alert('Please select a folder first');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('folder_path', folderPath);
+            formData.append('csrfmiddlewaretoken', document.querySelector('[name=csrfmiddlewaretoken]').value);
+            
+            fetch('/process/', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    document.getElementById('combinedLink').href = data.combined_file;
+                    document.getElementById('titlesLink').href = data.titles_file;
+                    document.getElementById('results').classList.remove('d-none');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred during processing');
+            });
+        }
+    </script>
+</body>
+</html>

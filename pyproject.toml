@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "excel_processor"
+version = "0.1.0"
+description = "Excel processing toolkit"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your@email.com"}
+]
+dependencies = [
+    "openpyxl>=3.0.0",
+    "pandas>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6.0.0",
+    "black>=22.0",
+]
+
+[tool.setuptools]
+# Either use this simple find directive:
+packages.find = {}  # This will search for all packages
+
+# OR if you need more control, use this:
+# packages.find = {where = ["."], include = ["excel_processor*", "apps*"]}

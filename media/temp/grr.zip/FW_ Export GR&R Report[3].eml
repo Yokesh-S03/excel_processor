@@ -1,0 +1,313 @@
+Received: from OSQPR04MB8235.apcprd04.prod.outlook.com (::1) by
+ SI2PR04MB6617.apcprd04.prod.outlook.com with HTTPS; Sat, 26 Apr 2025 04:17:27
+ +0000
+Received: from SEZPR04MB6528.apcprd04.prod.outlook.com (2603:1096:101:ad::11)
+ by OSQPR04MB8235.apcprd04.prod.outlook.com (2603:1096:604:29e::11) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8655.33; Sat, 26 Apr
+ 2025 04:17:25 +0000
+Received: from SEZPR04MB6528.apcprd04.prod.outlook.com ([::1]) by
+ SEZPR04MB6528.apcprd04.prod.outlook.com ([fe80::d9ef:31af:14a6:a95%6]) with
+ Microsoft SMTP Server id 15.20.8678.028; Sat, 26 Apr 2025 04:17:25 +0000
+From: "Sankar Dinesh (Salcomp/Chennai)" <Dinesh.Sankar@salcomp.com>
+To: "Debug EngineeringEP (Salcomp/Chennai)" <EngineeringEP.Debug@salcomp.com>,
+	"Rajendiran Shanmugam (Salcomp/Chennai)" <Shanmugam.Rajendiran@salcomp.com>
+Subject: FW: Export GR&R Report
+Thread-Topic: Export GR&R Report
+Thread-Index: AQHbtmIddWME1yv9Y0mKNHChJoTdPrO1V3ab
+X-MS-Exchange-MessageSentRepresentingType: 1
+Date: Sat, 26 Apr 2025 04:17:25 +0000
+Message-ID:
+	<c7ad34efa44e450892f19e282583a3c7@SEZPR04MB6528.apcprd04.prod.outlook.com>
+References: <1873294299.377.1745640987073.JavaMail.noreply@enphaseenergy.com>
+In-Reply-To: <1873294299.377.1745640987073.JavaMail.noreply@enphaseenergy.com>
+Content-Language: en-US
+X-MS-Exchange-Organization-AuthMechanism: 03
+X-MS-Exchange-Organization-AuthSource: SEZPR04MB6528.apcprd04.prod.outlook.com
+X-MS-Has-Attach: yes
+X-MS-Exchange-Organization-AutoForwarded: true
+X-MS-Exchange-Organization-Network-Message-Id:
+	915e7681-19ad-439b-2f72-08dd84794007
+X-MS-Exchange-Inbox-Rules-Loop: dinesh.sankar@salcomp.com
+X-MS-TNEF-Correlator:
+X-MS-Exchange-Organization-RecordReviewCfmType: 0
+x-ms-publictraffictype: Email
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=salcomp.com;
+x-ms-office365-filtering-correlation-id: 915e7681-19ad-439b-2f72-08dd84794007
+x-ms-traffictypediagnostic:
+	SEZPR04MB6528:EE_|OSQPR04MB8235:EE_|SI2PR04MB6617:EE_
+x-microsoft-antispam: BCL:0;ARA:13230040|366016|41050700001;
+x-forefront-antispam-report:
+	CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:SEZPR04MB6528.apcprd04.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(366016)(41050700001);DIR:INT;
+x-ms-exchange-crosstenant-authas: Internal
+x-ms-exchange-crosstenant-authsource: SEZPR04MB6528.apcprd04.prod.outlook.com
+x-ms-exchange-crosstenant-network-message-id:
+	915e7681-19ad-439b-2f72-08dd84794007
+x-ms-exchange-crosstenant-originalarrivaltime: 26 Apr 2025 04:17:25.6398 (UTC)
+x-ms-exchange-crosstenant-fromentityheader: Hosted
+x-ms-exchange-crosstenant-id: 1e83a40d-3dbf-469e-a2b1-067470128b65
+x-ms-exchange-transport-crosstenantheadersstamped: OSQPR04MB8235
+x-ms-exchange-transport-endtoendlatency: 00:00:02.1637256
+x-ms-exchange-processed-by-bccfoldering: 15.20.8678.021
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944506478)(944626604)(920097)(425001)(930097)(140003);
+X-Microsoft-Antispam-Message-Info:
+	lBwExlFcoeuS7pakEZ4mjCWNlfR/dbcxbHPNduT+yoqnwFIdQOZUZ0HPmibs+3h9dpmZWRpHaKIADtS6FdAJRPO/PoGu85u2YZgHNbGG+iixLepYi1aQvCVXjpcuwSU9dWRaHefV6lx6jnGNf9zpH1vgYH4zc7nZbKV9XLezTgEHbgncXzeL+VxlN60i4VE0QeYUvj5vaiNAR3jKEvPMq+YZQKOXIyP1vro6jMupEkBReGgzjL+S+gzBg8X6NYKsZKDwhXsAZ36mrxmr5YaC8MUKs//xmZLDfN4jnAVMY/G+uSPgtidFh6RkS0OJirJL3NBKEC2WCBbEjkiVCuUd1qwvay/kBFN7AFi+RB1dKUPYjdNrA61vODHLj5Dv7aypIC13zYZxpvLFIlDsUI9b7xSqcj8wIc8V4U7vn6Fv/xKkqXZgqYEOzTazOEiQ/Sghvz4j6vXw3rfpLynGnzr7rSTwFLygSsKWr1u94HlNcFc=
+Content-Type: multipart/mixed;
+	boundary="_002_c7ad34efa44e450892f19e282583a3c7SEZPR04MB6528apcprd04pr_"
+MIME-Version: 1.0
+
+--_002_c7ad34efa44e450892f19e282583a3c7SEZPR04MB6528apcprd04pr_
+Content-Type: text/plain; charset="us-ascii"
+
+
+--_002_c7ad34efa44e450892f19e282583a3c7SEZPR04MB6528apcprd04pr_
+Content-Type: message/rfc822
+Content-Disposition: attachment;
+	creation-date="Sat, 26 Apr 2025 04:17:25 GMT";
+	modification-date="Sat, 26 Apr 2025 04:21:03 GMT"
+
+Received: from SEZPR04MB7314.apcprd04.prod.outlook.com (2603:1096:101:180::5)
+ by SEZPR04MB6528.apcprd04.prod.outlook.com with HTTPS; Sat, 26 Apr 2025
+ 04:17:24 +0000
+Received: from TY2PR02CA0024.apcprd02.prod.outlook.com (2603:1096:404:56::36)
+ by SEZPR04MB7314.apcprd04.prod.outlook.com (2603:1096:101:180::5) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.8678.25; Sat, 26 Apr
+ 2025 04:16:53 +0000
+Received: from OSA0EPF000000CA.apcprd02.prod.outlook.com
+ (2603:1096:404:56:cafe::31) by TY2PR02CA0024.outlook.office365.com
+ (2603:1096:404:56::36) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.20.8655.37 via Frontend Transport; Sat,
+ 26 Apr 2025 04:16:53 +0000
+Authentication-Results: spf=softfail (sender IP is 213.138.145.1)
+ smtp.mailfrom=enphaseenergy.com; dkim=test (signature was verified)
+ header.d=enphaseenergy.com;dmarc=pass action=none
+ header.from=enphaseenergy.com;compauth=pass reason=100
+Received-SPF: SoftFail (protection.outlook.com: domain of transitioning
+ enphaseenergy.com discourages use of 213.138.145.1 as permitted sender)
+Received: from asgw5.edelkey.net (213.138.145.1) by
+ OSA0EPF000000CA.mail.protection.outlook.com (10.167.240.56) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.8655.12 via Frontend Transport; Sat, 26 Apr 2025 04:16:51 +0000
+Authentication-Results-Original: edelkey.net;	spf=pass
+ smtp.mailfrom=enable@enphaseenergy.com;	dkim=pass header.s=mail
+ header.d=enphaseenergy.com;	dmarc=pass header.from=enphaseenergy.com
+Received: from gate.edelkey.net (gate.edelkey.net [213.138.147.140])
+	by asgw5.edelkey.net (8.17.1.19/8.17.1.19) with ESMTPS id 53Q4Gi6i010167
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <dinesh.sankar@salcomp.com>; Sat, 26 Apr 2025 07:16:45 +0300
+Received: from aw-mailfwd.enphaseenergy.com ([167.94.12.13])
+	by gate.edelkey.net (8.15.2/8.15.2) with ESMTP id 53Q4GcSI1274689
+	for <dinesh.sankar@salcomp.com>; Sat, 26 Apr 2025 07:16:44 +0300
+Date: Sat, 26 Apr 2025 07:16:38 +0300
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; d=enphaseenergy.com;
+	s=mail; t=1745640991;
+	bh=jpm8RGaNLQCvbloyjVR/cwVxBryCb47bQf0YXcmEm3Y=;
+	h=From:Reply-To:To:Subject:From;
+	b=BuSKtEQKaFyy5+uT6O+UiLI5YZMhbj/sjhyoo+1L1iTypPzJd6mOsuqlUlpL4r/gg
+	 4ys3OqkwOYJCvqe6SlDAXI2IhIGpJtsnhJzka52bTYmmi+m8/VgmfBLpDyOSgkFgSj
+	 KrB94xaogQ9jLx66aDXjdPib3+XRL4dyvk8A1zGKhy74I6XR3+5iGHhvUf27BWO0eX
+	 aUcg/VhBHAQUwUOozjjxQgHg9JN9gf6C4V0b5qSOTi+2Ep4xAOYHW4zeTdhQDIpdCz
+	 vO0q0plT4Hvmz1Uj1aBhnkkvRoO4sHvaxegsvu2ArOm9Agz/Z367Pu1n3cmG6Tldto
+	 Nyks5IXC+sQgg==
+Received: from salcompsrv04.enphaseenergy.com (unknown [172.21.104.22])
+	by aw-mailfwd.enphaseenergy.com (Postfix) with ESMTP id C4941D72A8
+	for <dinesh.sankar@salcomp.com>; Sat, 26 Apr 2025 04:16:30 +0000 (UTC)
+From: ENABLE <enable@enphaseenergy.com>
+Reply-To: Enable Dev <enable-dev@enphaseenergy.com>
+To: dsankar <dinesh.sankar@salcomp.com>
+Message-ID: <1873294299.377.1745640987073.JavaMail.noreply@enphaseenergy.com>
+Subject: Export GR&R Report
+Content-Type: multipart/mixed;
+	boundary="----=_Part_376_932426713.1745640987073"
+X-Proofpoint-GUID: UtfZk4Gzi5NZ1pYmNYOwWtYN3P2rZu5R
+X-Proofpoint-ORIG-GUID: UtfZk4Gzi5NZ1pYmNYOwWtYN3P2rZu5R
+X-Proofpoint-Spam-Details-Enc: AW1haW4tMjUwNDI2MDAyOCBTYWx0ZWRfX1UKEjq3uPfsZ
+ VTbSSC2NBQePKRJzLlcGHhWfmMtFK/NixHTrRZZm9tR0tqU5oCwPtVCUADlRPGW35+pxEM2BCb3
+ JoI+TatwpueC9HTap6lnNhTvWoQy2/UCgxGQN2hAu0D9OmfHPrl+kHPyIQb4RJ7wSXDXz1AzPaN
+ 9tBwVP0sW7fB4rtyDYfcHtx8GPdRO3B9Y7VtDnK1PzKlTjdMrl0SWByFSYwTmp68d23PTnzI4sF
+ YpnPWWBYN0vUGay7WifOD7GgaaWbaLZl6EoYgt0f6NOCRn/xVF1A==
+X-Proofpoint-SPF-Result: pass
+X-Proofpoint-SPF-Record: v=spf1 include:%{ir}.%{v}.%{d}.spf.has.pphosted.com ~all
+X-Proofpoint-Spam-Details: rule=notspam policy=default score=0 bulkscore=0 mlxscore=0 malwarescore=0
+ spamscore=0 phishscore=0 mlxlogscore=736 suspectscore=0 adultscore=0
+ classifier=spam adjust=0 reason=mlx scancount=1 engine=8.12.0-2504070000
+ definitions=main-2504260028
+X-Proofpoint-Virus-Version: vendor=baseguard
+ engine=ICAP:2.0.293,Aquarius:18.0.1099,Hydra:6.0.736,FMLib:17.12.80.40
+ definitions=2025-04-26_01,2025-04-24_02,2025-02-21_01
+Return-Path: enable@enphaseenergy.com
+X-MS-Exchange-Organization-ExpirationStartTime: 26 Apr 2025 04:16:52.3242
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 18053151-241a-44ae-8b3f-08dd84792c28
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 1e83a40d-3dbf-469e-a2b1-067470128b65:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: OSA0EPF000000CA:EE_|SEZPR04MB7314:EE_|SEZPR04MB6528:EE_
+X-MS-Exchange-Organization-AuthSource: OSA0EPF000000CA.apcprd02.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 18053151-241a-44ae-8b3f-08dd84792c28
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: -1
+X-Microsoft-Antispam: BCL:0;ARA:13230040|2092899012|5062899012|3092899012|12012899012|3072899012|4053099003;
+X-Forefront-Antispam-Report: CIP:213.138.145.1;CTRY:FI;LANG:en;SCL:-1;SRV:;IPV:NLI;SFV:NSPM;H:asgw5.edelkey.net;PTR:213138145001.edelkey.net;CAT:NONE;SFS:(13230040)(2092899012)(5062899012)(3092899012)(12012899012)(3072899012)(4053099003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 26 Apr 2025 04:16:51.5113
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 18053151-241a-44ae-8b3f-08dd84792c28
+X-MS-Exchange-CrossTenant-Id: 1e83a40d-3dbf-469e-a2b1-067470128b65
+X-MS-Exchange-CrossTenant-AuthSource: OSA0EPF000000CA.apcprd02.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: SEZPR04MB7314
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:33.4182063
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.8678.027
+MIME-Version: 1.0
+
+------=_Part_376_932426713.1745640987073
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: 7bit
+
+Dear Dinesh:
+
+Please see the attached GR&R report for RLY_L2_Set_RES_MES
+
+The following serial numbers have the required number of trials: 482517041877, 482517041882, 482517041886, 482517041885, 482517041878, 482517041881, 482517041884, 482517041879
+
+The following stations have the required number of trials: ST-E018
+
+The lower specification limit: 0.0 and the upper specification limit: 20.0.
+
+Please contact ENABLE (enable-dev@enphaseenergy.com) for any questions.
+
+Sincerely,
+
+ENABLE
+
+------=_Part_376_932426713.1745640987073
+Content-Type: application/octet-stream;
+	name="20250425211626_ST-E_RLY_L2_Set_RES_MES_Latching_relay_L2_RES_MES.xlsx.zip"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+	filename="20250425211626_ST-E_RLY_L2_Set_RES_MES_Latching_relay_L2_RES_MES.xlsx.zip"
+
+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
+AAA=
+
+------=_Part_376_932426713.1745640987073--
+
+--_002_c7ad34efa44e450892f19e282583a3c7SEZPR04MB6528apcprd04pr_--

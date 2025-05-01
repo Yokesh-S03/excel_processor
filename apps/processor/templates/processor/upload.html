@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Excel Processor</title>
+    <style>
+        .upload-container {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        .instructions {
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Upload Folder</h1>
+        <p class="instructions">
+            Select a folder containing ZIP files with Excel sheets to process
+        </p>
+        
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Process Files</button>
+        </form>
+    </div>
+</body>
+</html>

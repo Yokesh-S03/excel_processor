@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: excel_processor
+Version: 0.1.0
+Summary: Excel processing toolkit
+Author-email: Your Name <your@email.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: openpyxl>=3.0.0
+Requires-Dist: pandas>=1.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0.0; extra == "dev"
+Requires-Dist: black>=22.0; extra == "dev"

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Processing Complete</title>
+    <style>
+        .results-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 2rem;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-right: 1rem;
+        }
+        .file-info {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #f5f5f5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="results-container">
+        <h1>Processing Complete</h1>
+        
+        <div class="file-info">
+            <h3>Original Folder: {{ processed.original_folder }}</h3>
+            <p>Processed at: {{ processed.created_at }}</p>
+        </div>
+        
+        <h2>Download Results:</h2>
+        <a href="{{ processed.master_file.url }}" class="download-btn">
+            Download Master File
+        </a>
+        <a href="{{ processed.summary_file.url }}" class="download-btn">
+            Download summary File
+        </a>
+    </div>
+</body>
+</html>
