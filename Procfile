@@ -1,2 +1,2 @@
-web: gunicorn processor.wsgi
+web: gunicorn excel_processor.wsgi
 
