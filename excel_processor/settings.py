@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-62tno&%c@ee-+csenc8gt753w!d)pjt3@vxc8dzogu(x_dzw_8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['excel_processor.onrender.com']
 
 
 # Application definition
