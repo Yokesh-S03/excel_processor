@@ -9,8 +9,13 @@ https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
 
 import os
 
+from apps.processor.apps import apps
+
+
 from django.core.wsgi import get_wsgi_application
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'excel_processor.settings')
 
 application = get_wsgi_application()
+if __name__ == "__main__":
+    apps.run()
