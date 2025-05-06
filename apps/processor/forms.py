@@ -1,4 +1,11 @@
+# from django import forms
 
+# class FolderUploadForm(forms.Form):
+#     folder_path = forms.CharField(
+#         label='Folder Path',
+#         widget=forms.TextInput(attrs={'type': 'text', 'id': 'folder-path'})
+#     )
+# processor/forms.py
 from django import forms
 
 class FolderUploadForm(forms.Form):

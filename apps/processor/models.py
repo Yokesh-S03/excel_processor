@@ -6,7 +6,12 @@ def upload_to(instance, filename):
     now = datetime.now()
     return os.path.join('processed', f"{now.strftime('%Y%m%d_%H%M%S')}_{filename}")
 
-
+# class ProcessedFile(models.Model):
+#     original_folder = models.CharField(max_length=255)
+#     master_file = models.FileField(upload_to=upload_to)
+#     summary_file = models.FileField(upload_to=upload_to)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#     uploaded_at = models.DateTimeField(auto_now_add=True)
 from django.db import models
 
 class ProcessedFile(models.Model):

@@ -56,7 +56,7 @@ def process_folder(folder_path):
                             xls = pd.ExcelFile(excel_path)
                             for sheet_name in xls.sheet_names:
                                 df = pd.read_excel(excel_path, sheet_name=sheet_name)
-                                sheet_title = f"{os.path.splitext(file)[0]}_{sheet_name}"[:50]  
+                                sheet_title = f"{os.path.splitext(file)[0]}_{sheet_name}"[:31]  # Max 31 chars
 
                                 # Add to master workbook
                                 ws = master_wb.create_sheet(title=sheet_title)
@@ -67,7 +67,7 @@ def process_folder(folder_path):
                                     cell = ws.cell(row=1, column=c_idx, value=col_name)
                                     cell.font = bold_font
 
-                               
+                                # --- Read specific cells and add to summary
                                 openpyxl_wb = load_workbook(excel_path, data_only=True)
                                 openpyxl_ws = openpyxl_wb[sheet_name]
 
@@ -82,12 +82,14 @@ def process_folder(folder_path):
                         except Exception as e:
                             print(f"Error processing {excel_path}: {e}")
 
-    # After all processing
+    
     if real_sheets_added:
+        # If real sheets were added, remove the placeholder sheet
         if "Placeholder" in master_wb.sheetnames:
             std = master_wb["Placeholder"]
             master_wb.remove(std)
     else:
+        # If no real sheets were added, write a note
         default_sheet.append(["No valid Excel files found in the uploaded folder."])
 
     
