@@ -20,8 +20,13 @@ from django.urls import path
 from apps.processor import views
 from django.conf import settings
 from django.conf.urls.static import static
+from django.http import HttpResponse
+
+def health_check(request):
+    return HttpResponse("OK", status=200)
 
 urlpatterns = [
     path('', views.upload_folder, name='upload'),
     path('results/<int:pk>/', views.results, name='results'),
+    path('health/', health_check, name='health-check'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

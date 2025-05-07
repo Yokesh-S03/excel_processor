@@ -27,7 +27,8 @@ SECRET_KEY = 'django-insecure-62tno&%c@ee-+csenc8gt753w!d)pjt3@vxc8dzogu(x_dzw_8
 DEBUG = False
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'excel-processor-coii.onrender.com']
-
+# settings.py
+PORT = os.environ.get('PORT', 8000)
 
 # Application definition
 
